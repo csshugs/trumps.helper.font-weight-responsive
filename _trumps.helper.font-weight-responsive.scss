@@ -1,0 +1,135 @@
+/*------------------------------------*\
+    #FONT-WEIGHT-RESPONSIVE
+\*------------------------------------*/
+
+// Choose which responsive font-weights should be genrated.
+$inuit-enable-font-weight--responsive--100:     false !default;
+$inuit-enable-font-weight--responsive--200:     false !default;
+$inuit-enable-font-weight--responsive--300:     false !default;
+$inuit-enable-font-weight--responsive--400:     false !default;
+$inuit-enable-font-weight--responsive--500:     false !default;
+$inuit-enable-font-weight--responsive--600:     false !default;
+$inuit-enable-font-weight--responsive--700:     false !default;
+$inuit-enable-font-weight--responsive--800:     false !default;
+$inuit-enable-font-weight--responsive--900:     false !default;
+
+
+
+@each $breakpoint in $breakpoints {
+
+    $alias:     nth($breakpoint, 1);
+    $condition: nth($breakpoint, 2);
+
+    @include media-query($alias) {
+
+        @if ($inuit-enable-font-weight--responsive--100 == true) {
+
+            /**
+             * Font weight 100 #{$alias}
+             */
+            .#{$alias}-weight--100,
+            %#{$alias}-weight--100{
+                font-weight: 100 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--200 == true) {
+
+            /**
+             * Font weight 200 #{$alias}
+             */
+            .#{$alias}-weight--200,
+            %#{$alias}-weight--200{
+                font-weight: 200 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--300 == true) {
+
+            /**
+             * Font weight 300 #{$alias}
+             */
+            .#{$alias}-weight--300,
+            %#{$alias}-weight--300{
+                font-weight: 300 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--400 == true) {
+
+            /**
+             * Font weight 400 #{$alias}
+             */
+            .#{$alias}-weight--400,
+            %#{$alias}-weight--400{
+                font-weight: 400 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--500 == true) {
+
+            /**
+             * Font weight 500 #{$alias}
+             */
+            .#{$alias}-weight--500,
+            %#{$alias}-weight--500{
+                font-weight: 500 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--600 == true) {
+
+            /**
+             * Font weight 600 #{$alias}
+             */
+            .#{$alias}-weight--600,
+            %#{$alias}-weight--600{
+                font-weight: 600 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--700 == true) {
+
+            /**
+             * Font weight 700 #{$alias}
+             */
+            .#{$alias}-weight--700,
+            %#{$alias}-weight--700{
+                font-weight: 700 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--800 == true) {
+
+            /**
+             * Font weight 800 #{$alias}
+             */
+            .#{$alias}-weight--800,
+            %#{$alias}-weight--800{
+                font-weight: 800 !important;
+            }
+
+        }
+
+        @if ($inuit-enable-font-weight--responsive--900 == true) {
+
+            /**
+             * Font weight 900 #{$alias}
+             */
+            .#{$alias}-weight--900,
+            %#{$alias}-weight--900{
+                font-weight: 900 !important;
+            }
+
+        }
+
+    } // Close media query.
+
+} // Close breakpoints loop.
