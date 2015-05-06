@@ -18,17 +18,15 @@ $inuit-enable-font-weight--responsive--900:     false !default;
 @each $breakpoint in $breakpoints {
 
     $alias:     nth($breakpoint, 1);
-    $condition: nth($breakpoint, 2);
 
     @include media-query($alias) {
 
         @if ($inuit-enable-font-weight--responsive--100 == true) {
 
             /**
-             * Font weight 100 #{$alias}
+             * Font weight 100 #{$alias}.
              */
-            .#{$alias}-weight--100,
-            %#{$alias}-weight--100{
+            .u-weight-100-#{$alias} {
                 font-weight: 100 !important;
             }
 
@@ -37,10 +35,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--200 == true) {
 
             /**
-             * Font weight 200 #{$alias}
+             * Font weight 200 #{$alias}.
              */
-            .#{$alias}-weight--200,
-            %#{$alias}-weight--200{
+            .u-weight-200-#{$alias} {
                 font-weight: 200 !important;
             }
 
@@ -49,10 +46,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--300 == true) {
 
             /**
-             * Font weight 300 #{$alias}
+             * Font weight 300 #{$alias}.
              */
-            .#{$alias}-weight--300,
-            %#{$alias}-weight--300{
+            .u-weight-300-#{$alias} {
                 font-weight: 300 !important;
             }
 
@@ -61,10 +57,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--400 == true) {
 
             /**
-             * Font weight 400 #{$alias}
+             * Font weight 400 #{$alias}.
              */
-            .#{$alias}-weight--400,
-            %#{$alias}-weight--400{
+            .u-weight-400-#{$alias} {
                 font-weight: 400 !important;
             }
 
@@ -73,10 +68,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--500 == true) {
 
             /**
-             * Font weight 500 #{$alias}
+             * Font weight 500 #{$alias}.
              */
-            .#{$alias}-weight--500,
-            %#{$alias}-weight--500{
+            .u-weight-500-#{$alias} {
                 font-weight: 500 !important;
             }
 
@@ -85,10 +79,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--600 == true) {
 
             /**
-             * Font weight 600 #{$alias}
+             * Font weight 600 #{$alias}.
              */
-            .#{$alias}-weight--600,
-            %#{$alias}-weight--600{
+            .u-weight-600-#{$alias} {
                 font-weight: 600 !important;
             }
 
@@ -97,10 +90,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--700 == true) {
 
             /**
-             * Font weight 700 #{$alias}
+             * Font weight 700 #{$alias}.
              */
-            .#{$alias}-weight--700,
-            %#{$alias}-weight--700{
+            .u-weight-700-#{$alias} {
                 font-weight: 700 !important;
             }
 
@@ -109,10 +101,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--800 == true) {
 
             /**
-             * Font weight 800 #{$alias}
+             * Font weight 800 #{$alias}.
              */
-            .#{$alias}-weight--800,
-            %#{$alias}-weight--800{
+            .u-weight-800-#{$alias} {
                 font-weight: 800 !important;
             }
 
@@ -121,10 +112,9 @@ $inuit-enable-font-weight--responsive--900:     false !default;
         @if ($inuit-enable-font-weight--responsive--900 == true) {
 
             /**
-             * Font weight 900 #{$alias}
+             * Font weight 900 #{$alias}.
              */
-            .#{$alias}-weight--900,
-            %#{$alias}-weight--900{
+            .u-weight-900-#{$alias} {
                 font-weight: 900 !important;
             }
 
